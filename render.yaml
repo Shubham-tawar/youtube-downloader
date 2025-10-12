@@ -1,7 +1,9 @@
-   services:
+ services:
      - type: web
        name: youtube-downloader
        env: python
-       buildCommand: "pip install -r requirements.txt"
-       startCommand: "gunicorn app:app"
-       gunicorn==20.1.0
+       plan: free
+       buildCommand: |
+         apt-get update && apt-get install -y ffmpeg
+         pip install -r requirements.txt
+       startCommand: gunicorn app:app
