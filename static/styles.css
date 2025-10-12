@@ -1,0 +1,41 @@
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #333;
+    width: 90%;
+    max-width: 400px;
+}
+
+input, select, button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+}

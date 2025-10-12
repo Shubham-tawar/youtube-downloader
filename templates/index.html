@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 YouTube Downloader</h1>
+        <form method="POST" action="/download">
+            <input type="text" name="url" placeholder="Enter YouTube video or playlist URL" required>
+            <select name="format">
+                <option value="video">🎬 Video (MP4)</option>
+                <option value="audio">🎵 Audio (MP3)</option>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+        <p class="note">Works on both mobile 📱 and desktop 💻</p>
+    </div>
+</body>
+</html>
