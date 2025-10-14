@@ -1,6 +1,6 @@
 body {
-    background: #0f0f0f;
-    color: white;
+    background: white;
+    color: rgb(223, 138, 89);
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
@@ -10,10 +10,10 @@ body {
 
 .container {
     text-align: center;
-    background: #1e1e1e;
+    background: #d7cece;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 20px #333;
+    box-shadow: 0 0 10px #333;
     width: 90%;
     max-width: 400px;
 }
@@ -34,6 +34,9 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: orange;
+}
 .note {
     margin-top: 15px;
     font-size: 0.9rem;
