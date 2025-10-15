@@ -44,7 +44,7 @@ def download_video():
 
     elif format_choice == "audio":
         ydl_opts = {
-            'ffmpeg_location': r'C:\Program Files (x86)\ffmpeg\bin',
+            'ffmpeg_location': '/usr/bin/ffmpeg',
             "format": "bestaudio/best",
             "outtmpl": output_template,
             "postprocessors": [{
